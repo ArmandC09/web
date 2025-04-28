@@ -1,0 +1,78 @@
+
+<html>
+
+
+    <header>
+        <meta charset="UTF-8">
+        <title>Menu Principal</title>
+        <!--llamar al archivo donde se agregaran los estilos-->
+        <link rel="stylesheet" href="style.css">
+        <script> 
+            function actualizarPagina() { 
+                location.reload(); 
+                } 
+        </script>
+        <h1 class="logo_link"><span onclick="actualizarPagina()">TiendaDigital</span></h1>
+        <!--Botones para redirigir al las rutas indicadas-->
+        <form method="post" > 
+            <button formaction="phplogin/logout.php" class="cerrar" type="submit">Cerrar Sesión</button>
+            <button formaction="phplogin/menu.php">Lista de Productos</button>
+            <button formaction="#contacto">Contacto</button>
+            <button formaction="#informacion">Mas informacion</button>
+            <button formaction="#politicas">Politicas</button>
+            <button formaction="#mapa">Encuentranos</button>
+            <button formaction="#tutorial">Tutorial</button>
+        </form>
+    </header>
+
+
+
+
+
+    <main>
+        <!--informacion sobre la pagina id= para que al hacer click al boton de arriba me redirija aqui y class= para agregar estilos-->
+        <div id="informacion" class="contenidoInformacion">
+            <h1 class="titulo_informacion">Mas informacion</h1>
+            <div class="informacion">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est repellat, ullam vero obcaecati laudantium vitae illo minus voluptates natus id excepturi illum qui aliquid debitis alias aspernatur consequatur dolor a. Eaque sunt quidem nesciunt doloribus dolores aliquid facere amet distinctio harum magnam, quo reiciendis commodi quibusdam maxime omnis incidunt perspiciatis recusandae optio nisi deleniti enim alias quos? Ex, quasi sunt. Culpa officiis consequatur perspiciatis voluptatibus, incidunt vel atque, deserunt amet accusamus eligendi assumenda sint! Sunt iure, ducimus delectus quia vero vel, a earum neque aut repellendus voluptas vitae voluptatibus ipsam explicabo ipsa qui autem harum deserunt reiciendis perspiciatis unde numquam. Saepe ipsum, nam sunt cupiditate mollitia voluptatem expedita quidem perferendis consequuntur delectus soluta sint praesentium nihil corrupti tempore quo eum reprehenderit, non nemo voluptas nobis autem aperiam aut. Modi optio velit veritatis, repellat nam a ad impedit accusamus, et repudiandae id praesentium quisquam doloremque aut culpa tenetur. Incidunt fuga tempore iste pariatur nihil voluptatibus at voluptatum vitae, accusantium, modi placeat sunt molestias facilis nostrum hic ea soluta totam culpa quibusdam voluptates atque veniam. Quisquam exercitationem recusandae vero, consequuntur nulla suscipit optio. Modi reprehenderit ad architecto reiciendis quis animi molestias magnam temporibus. Esse necessitatibus numquam dolorem voluptas deserunt adipisci temporibus quod reprehenderit magnam iure laudantium rem qui, nobis dolorum, suscipit veritatis, corporis ipsam fuga cum? Inventore numquam minima doloremque possimus amet!</p> 
+                <img class="imagen2" src="imagenes/informacion.avif" alt="Logo TiendaDigital">
+            </div>        
+        </div>
+        <!--div donde se agrega mapa pada ubicacion-->
+        <div id="mapa" class="mapa">
+            <h1 class="titulo_mapa">Encuentranos en:</h1>
+            <div class="mapa_link">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15179.217995424142!2d-70.238021!3d-17.9878304!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915ac57ce0d73bdb%3A0x16b613d647f8e2b5!2sSENATI%20Tacna!5e0!3m2!1ses-419!2spe!4v1732254434645!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <!--div donde se agrega politicas y una imagen-->
+        <div id="politicas">
+            <h1 class="titulo_informacion">Politicas de seguridad</h1>
+            <div class="informacion">
+
+                <img class="imagen2" src="imagenes/imagenPoliticas.jfif" alt="Logo TiendaDigital">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, atque error neque soluta corporis provident ea rem repudiandae commodi odio iusto mollitia magni explicabo! Quas iusto excepturi, accusamus magnam vero ab possimus neque praesentium facere asperiores temporibus sequi nobis illo enim minus soluta voluptatibus porro rerum recusandae cumque! Delectus explicabo voluptatibus, accusantium inventore, iure officia, quis ullam tenetur vero eum repellendus nesciunt nam veniam? Vel suscipit autem at aperiam repellat aliquid consectetur quo ullam quidem, sequi commodi architecto rem voluptatibus reprehenderit debitis vero voluptates, illum nulla officia quae ex laudantium voluptatem itaque. Error eaque, ullam, possimus accusantium maxime est enim et fugiat facilis ad ipsa voluptate consequatur officiis? Dolorum architecto commodi dolorem excepturi incidunt animi repellat eos. Rerum, placeat tenetur.</p> 
+            </div>        
+        </div>
+        <!--div donde se agrega un video de la pagina web-->
+        <div id="tutorial" class="mapa">
+            <h1 class="titulo_mapa">Tutorial de uso</h1>
+            <div class="mapa_link">
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/httj0fgv-QY?si=GKhZUe0wA8ui1Vmx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <!--barra inferior para las redes sociales-->
+        <div class="social-bar" id="contacto"> 
+            <h1>Contactanos en diego@senati.pe</h1>
+            <a href="https://www.facebook.com" target="_blank"> <img width="50" height="50" src="https://img.icons8.com/material-outlined/96/facebook-new.png" alt="facebook-new"/> </a> 
+            
+            <a href="https://www.twitter.com" target="_blank"> <img width="50" height="50" src="https://img.icons8.com/ios/50/twitterx--v1.png" alt="twitterx--v1"/> </a> 
+            
+            <a href="https://www.instagram.com" target="_blank"> <img width="50" height="50" src="https://img.icons8.com/windows/32/instagram-new.png" alt="instagram-new"/> </a> 
+            
+            <a href="https://www.tiktok.com" target="_blank"> <img width="50" height="50" src="https://img.icons8.com/fluency-systems-regular/50/tiktok.png" alt="tiktok"/></a> 
+        </div>
+
+    </main>
+</html>
+

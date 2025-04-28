@@ -1,0 +1,134 @@
+<html>
+
+
+    <header>
+        <title>Trabajo Final</title>
+            <a href="index.html" class="logo_link"> 
+                <h1 class="logo">TiendaDigital</h1></a>
+        <!--llamar al archivo donde se agregaran los estilos-->
+        <link rel="stylesheet" href="style.css">
+
+    
+        <form action="post">
+            <button formaction="#contacto">Contacto</button>
+            <button formaction="#informacion">Mas informacion</button>
+            <button formaction="#politicas">Politicas</button>
+            <button formaction="#mapa">Encuentranos</button>
+            <button formaction="#tutorial">Tutorial</button>
+        </form>
+    </header>
+
+    <main>
+        
+        <div class="cuadroRegistro">
+            
+            <div class="texto">
+                <h1>Bienvenido</h1>
+                <img class="imagen" src="imagenes/imagen1.jpg" alt="Logo TiendaDigital">
+            </div>
+            <div class="registrarse">
+                <!--formulario para pedir ingresar dartos para registrarse-->
+                <form action="phplogin/registrar.php">
+                    <h1>Registrarse</h1>
+                    Nombre: <br><br>  
+                    <input  type="text" name="nombre_usuario" required><br><br>
+                    Email: <br><br>
+                    <input type="text" name="email" required><br><br>
+                    Contraseña: <br><br>
+                    <input type="password" name="contraseña" required><br><br>
+                    <input class="boton_registrar" type="submit" value="Registrar">
+                </form>
+            </div>
+            
+            <div class="login">
+                <!--formulario para pedir sus datos registrados al usuario-->
+                <form action="phplogin/login.php" method="post">
+                    <h1>Iniciar Sesion</h1>
+                    Email: <br><br>
+                    <input type="text" name="email" required><br><br>
+                    Contraseña: <br><br>
+                    <input type="password" name="password" required>
+                    <br><br>
+                    <label>
+                        <input type="checkbox" name="recordar"> Recordarme
+                    </label><br><br>
+                    <input class="boton_login" type="submit" value="Login">
+                </form>
+            </div>
+        </div>
+        <!--div donde se agrega informacion y una imagen-->
+        <div id="informacion" class="contenidoInformacion">
+            <h1 class="titulo_informacion">Mas informacion</h1>
+            <div class="informacion">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est repellat, ullam vero obcaecati laudantium vitae illo minus voluptates natus id excepturi illum qui aliquid debitis alias aspernatur consequatur dolor a. Eaque sunt quidem nesciunt doloribus dolores aliquid facere amet distinctio harum magnam, quo reiciendis commodi quibusdam maxime omnis incidunt perspiciatis recusandae optio nisi deleniti enim alias quos? Ex, quasi sunt. Culpa officiis consequatur perspiciatis voluptatibus, incidunt vel atque, deserunt amet accusamus eligendi assumenda sint! Sunt iure, ducimus delectus quia vero vel, a earum neque aut repellendus voluptas vitae voluptatibus ipsam explicabo ipsa qui autem harum deserunt reiciendis perspiciatis unde numquam. Saepe ipsum, nam sunt cupiditate mollitia voluptatem expedita quidem perferendis consequuntur delectus soluta sint praesentium nihil corrupti tempore quo eum reprehenderit, non nemo voluptas nobis autem aperiam aut. Modi optio velit veritatis, repellat nam a ad impedit accusamus, et repudiandae id praesentium quisquam doloremque aut culpa tenetur. Incidunt fuga tempore iste pariatur nihil voluptatibus at voluptatum vitae, accusantium, modi placeat sunt molestias facilis nostrum hic ea soluta totam culpa quibusdam voluptates atque veniam. Quisquam exercitationem recusandae vero, consequuntur nulla suscipit optio. Modi reprehenderit ad architecto reiciendis quis animi molestias magnam temporibus. Esse necessitatibus numquam dolorem voluptas deserunt adipisci temporibus quod reprehenderit magnam iure laudantium rem qui, nobis dolorum, suscipit veritatis, corporis ipsam fuga cum? Inventore numquam minima doloremque possimus amet!</p> 
+                <img class="imagen2" src="imagenes/informacion.avif" alt="Logo TiendaDigital">
+            </div>        
+        </div>
+        <!--div donde se agrega mapa para ubicacion -->
+        <div id="mapa" class="mapa">
+            <h1 class="titulo_mapa">Encuentranos en:</h1>
+            <div class="mapa_link">
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1745860198663!6m8!1m7!1s8JBxWCRcH7E-ffamS7ltrw!2m2!1d-18.01656195273478!2d-70.25137605479627!3f254.99473194376796!4f-1.8968438261504303!5f1.7418997397737055" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
+        <!--div donde se agrega politicas de seguridad y una imagen-->
+        <div id="politicas">
+            <h1 class="titulo_informacion">Politicas de seguridad</h1>
+            <div class="informacion">
+
+                <img class="imagen2" src="imagenes/imagenPoliticas.jfif" alt="Logo TiendaDigital">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, atque error neque soluta corporis provident ea rem repudiandae commodi odio iusto mollitia magni explicabo! Quas iusto excepturi, accusamus magnam vero ab possimus neque praesentium facere asperiores temporibus sequi nobis illo enim minus soluta voluptatibus porro rerum recusandae cumque! Delectus explicabo voluptatibus, accusantium inventore, iure officia, quis ullam tenetur vero eum repellendus nesciunt nam veniam? Vel suscipit autem at aperiam repellat aliquid consectetur quo ullam quidem, sequi commodi architecto rem voluptatibus reprehenderit debitis vero voluptates, illum nulla officia quae ex laudantium voluptatem itaque. Error eaque, ullam, possimus accusantium maxime est enim et fugiat facilis ad ipsa voluptate consequatur officiis? Dolorum architecto commodi dolorem excepturi incidunt animi repellat eos. Rerum, placeat tenetur.</p> 
+            </div>        
+        </div>
+        <!--div donde se agrega un video-->
+        <div id="tutorial" class="mapa">
+            <h1 class="titulo_mapa">Tutorial de uso</h1>
+            <div class="mapa_link">
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/httj0fgv-QY?si=GKhZUe0wA8ui1Vmx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <!--barrra  inferior donde estaran las redes sociales-->
+        <div class="social-bar" id="contacto"> 
+            <h1>Contactanos en diego@senati.pe</h1>
+            <a href="https://www.facebook.com" target="_blank"> <img width="50" height="50" src="https://img.icons8.com/material-outlined/96/facebook-new.png" alt="facebook-new"/> </a> 
+            
+            <a href="https://www.twitter.com" target="_blank"> <img width="50" height="50" src="https://img.icons8.com/ios/50/twitterx--v1.png" alt="twitterx--v1"/> </a> 
+            
+            <a href="https://www.instagram.com" target="_blank"> <img width="50" height="50" src="https://img.icons8.com/windows/32/instagram-new.png" alt="instagram-new"/> </a> 
+            
+            <a href="https://www.tiktok.com" target="_blank"> <img width="50" height="50" src="https://img.icons8.com/fluency-systems-regular/50/tiktok.png" alt="tiktok"/></a> 
+        </div>
+        
+
+        
+<body>
+        <!--
+        coloca cada producto agregado por el usuario-
+        <div class="vitrina">  <?php include 'producto.php'; ?> </div>
+        -->
+</body>
+
+    </main>
+</html>
+
+
+<!--
+
+
+NOMBRE BASE DE DATOS = baseweb
+
+CREATE TABLE producto(
+    id_producto INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_producto VARCHAR(30) NOT NULL,
+    descripcion VARCHAR(300),
+    precio DECIMAL(8,2) NOT NULL
+);
+
+CREATE TABLE usuario(
+    id_usuario INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_usuario VARCHAR(30) UNIQUE NOT NULL,
+    email VARCHAR(50) UNIQUE NOT NULL,
+    contraseña VARCHAR(30) NOT NULL
+);
+
+
+
+-->
